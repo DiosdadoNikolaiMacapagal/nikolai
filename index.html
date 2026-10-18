@@ -33,7 +33,7 @@
             }
         }
     </script>
-
+<script>document.body.innerHTML = document.body.innerHTML.replace(/\\log_2/g, 'log₂').replace(/\\cdot/g, '·').replace(/\$([^$]+)\$/g, '<code>$1</code>');</script>
     <style>
         :root {
             --bg-primary: #07090E;
@@ -1354,7 +1354,7 @@
                         Valorant × Fitts's Law Telemetry &amp; Linear Regression Arena
                     </h2>
                     <p class="text-xs sm:text-sm text-slate-400 mt-1 max-w-2xl">
-                        Click 6 consecutive targets on the left canvas. Every flick calculates exact Euclidean distance ($D$), Index of Difficulty ($ID = \log_2(2D/W)$), Movement Time ($MT$), and plots your live regression line ($MT = a + b \cdot ID$) on the right!
+                        Click 6 consecutive targets on the left canvas. Every flick calculates exact Euclidean distance (<code>D</code>), Index of Difficulty (<code>ID = log<sub>2</sub>(2D/W)</code>), Movement Time (<code>MT</code>), and plots your live regression line (<code>MT = a + b &middot; ID</code>) on the right!
                     </p>
                 </div>
 
