@@ -1,2 +1,0 @@
-# nikolai
-HCI Activity
